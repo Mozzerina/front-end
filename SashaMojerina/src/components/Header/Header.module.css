@@ -1,0 +1,15 @@
+.container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.wrapper {
+    position: fix;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background: #fff;
+    border: 1px solid #C5C5C5;
+}
