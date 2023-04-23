@@ -1,0 +1,93 @@
+.main {
+    margin-top: 124px;
+    flex: 1 1 auto;
+}
+
+.container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+    max-width: 720px;
+}
+
+.text {
+    font-weight: 600;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.ourContainer:first-child {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+    max-width: 720px;
+}
+
+.ourContainer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+.ourBody {
+    flex-direction: column;
+    display: flex;
+}
+
+.ourImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ourImg:nth-child(2) {
+    margin-top: 3.2rem;
+}
+
+
+.ourTextBody:first-child {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    align-items: center;
+    display: flex;
+}
+
+.ourTextBody {
+    padding-top: 3.2rem;
+    align-items: center;
+    display: flex;
+}
+
+.ourContent {
+    max-width: 83%;
+}
+
+.ourTexHeader {
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+.ourTextMain {
+    max-width: calc(1em * (calc(600 / 13)));
+    font-size: 19px;
+    line-height: 1.75;
+    padding-bottom: 1.5rem;
+}
+

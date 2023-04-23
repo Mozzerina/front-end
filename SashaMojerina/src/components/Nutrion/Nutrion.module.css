@@ -1,0 +1,33 @@
+
+
+.nutrionSection {
+    padding-bottom: 32px;
+}
+
+.headingSection {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.headingBottomBorder {
+    padding: 0 8px 12px;
+    position: relative;
+    display: block;
+}
+
+.headingBottomBorder::after {
+    content: "";
+    background: #FFD3B5;
+    border-radius: 12px;
+    bottom: 0;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.textSection {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

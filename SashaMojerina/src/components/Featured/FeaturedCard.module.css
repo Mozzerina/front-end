@@ -1,0 +1,86 @@
+.Container {
+    display: flex;
+    width: calc(100% * (6 / 12));
+    flex-direction: column;
+}
+
+.body {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+}
+
+/* .bodyLeft {
+    margin-left: 1.6rem;
+}
+
+.bodyRight {
+    margin-right: 1.6rem;
+} */
+
+.imgContainer {
+    display: flex;
+    padding-bottom: 0.8rem;
+    width: calc(100% * (12 / 12));
+    justify-content: center;
+    align-items: center;
+    background-color: #f6bfd9;
+}
+
+.imgCards {
+    max-width: 100%;
+    height: auto;
+    background-color: #f6bfd9;
+}
+
+.textCardsContainer {
+    display: flex;
+    padding-bottom: 3.2rem;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f6bfd9;
+    padding-right: 4.8rem;
+    padding-left: 4.8rem;
+   
+}
+
+.headerBodyCards {
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    font-size: 24px;
+    line-height: calc(24 / 30 *100%);
+}
+
+.headerTextCards {
+    max-width: calc(1em * (calc(600 / 13)));
+
+}
+
+.textCards {
+    max-width: calc(1em * (calc(600 / 13)));
+    font-size: 19px;
+    line-height: calc(19 / 24 *100%);
+}
+
+.buttonCards {
+    display: inline-block;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    min-width: 35px;
+    min-height: 35px;
+    color: #000;
+    margin-top: 3.2rem;
+    vertical-align: middle;
+}

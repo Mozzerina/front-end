@@ -1,0 +1,34 @@
+.main {
+    margin-top: 124px;
+    flex: 1 1 auto;
+}
+
+.contentContainer {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    max-width: 1440px;
+}
+
+.contentBody {
+    background-color: #fff;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.content {
+    color: #000000;
+    font-size: 14px;
+    max-width: calc(1em * (calc(600 / 13)));
+    line-height: 1.8;
+}
+
+.link {
+    color: #000000;
+}
