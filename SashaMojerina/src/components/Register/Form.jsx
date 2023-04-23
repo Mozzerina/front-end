@@ -170,7 +170,22 @@ function Form() {
               </div>
             </fieldset>
             <div className={s.buttonContainer}>
-              <button disabled={!formValid} onClick={() => dispatch(registration(firstName, lastName, email, password))} type="submit" className={s.button}>Create account</button>
+              <button
+                disabled={!formValid}
+                onClick={() => {
+                  dispatch(registration({
+                    name: firstName,
+                    surname: lastName,
+                    email,
+                    password,
+                  }));
+                }}
+                type="submit"
+                className={s.button}
+              >
+                Create account
+
+              </button>
             </div>
           </div>
         </form>
