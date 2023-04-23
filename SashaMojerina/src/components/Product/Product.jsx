@@ -27,6 +27,7 @@ function Product() {
         setData(resp.data);
         setLoad(false);
       });
+    window.scrollTo(0, 0);
   }, []);
 
   // const headingText = (data.link.substring(data.link.lastIndexOf('/') + 1)).replace(/-/g, ' ')

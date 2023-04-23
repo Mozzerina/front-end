@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 import AuthService from '../../services/AuthSevice';
+import { API_URL } from '../../http';
 
 export const login = createAsyncThunk(
   'auth/login',
@@ -8,7 +10,12 @@ export const login = createAsyncThunk(
       const response = await AuthService.login(email, password);
       localStorage.setItem('token', response.data.accessToken);
       dispatch(setAuth(true));
-      dispatch(response.data.user);
+      dispatch(setUser({
+        name: response.data.name,
+        email: response.data.email,
+        surname: response.data.surname,
+        id: response.data.id,
+      }));
     //   return response.data.user;
     } catch (e) {
       return rejectWithValue(e.message);
@@ -24,9 +31,14 @@ export const registration = createAsyncThunk(
     try {
       const response = await AuthService.register(name, surname, email, password);
       console.log(response);
-      localStorage.setItem('token', response.data.accessToken);
+      localStorage.setItem('token', response.data.passwordHash);
       dispatch(setAuth(true));
-      dispatch(response.data.user);
+      dispatch(setUser({
+        name: response.data.name,
+        email: response.data.email,
+        surname: response.data.surname,
+        id: response.data.id,
+      }));
     //   return response.data.user;
     } catch (e) {
       return rejectWithValue(e.message);
@@ -41,7 +53,27 @@ export const logout = createAsyncThunk(
     //   const response = await AuthService.logout();
       localStorage.removeItem('token');
       dispatch(setAuth(false));
-      dispatch({});
+      dispatch(setUser({}));
+    //   return response.data.user;
+    } catch (e) {
+      return rejectWithValue(e.message);
+    }
+  },
+);
+
+export const checkAuth = createAsyncThunk(
+  'auth/checkAuth',
+  async (_, { rejectWithValue, dispatch }) => {
+    try {
+      const response = await axios.get(`${API_URL}/refresh`, { withCredentials: true });
+      localStorage.setItem('token', response.data.passwordHash);
+      dispatch(setAuth(true));
+      dispatch(setUser({
+        name: response.data.name,
+        email: response.data.email,
+        surname: response.data.surname,
+        id: response.data.id,
+      }));
     //   return response.data.user;
     } catch (e) {
       return rejectWithValue(e.message);
@@ -57,7 +89,12 @@ const setError = (state, action) => {
 const authSlice = createSlice({
   name: 'auth',
   initialState: {
-    user: {},
+    user: {
+      name: '',
+      email: '',
+      surname: '',
+      id: 0,
+    },
     isAuth: false,
     status: null,
     error: null,

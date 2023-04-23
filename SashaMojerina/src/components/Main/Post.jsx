@@ -4,7 +4,7 @@ import s from './Post.module.css';
 
 function Post({
   image, title, info,
-  position, color, backgroundImage, btn,
+  position, color, backgroundImage, btn, link,
 }) {
   return (
     <div className={s.container}>
@@ -16,7 +16,7 @@ function Post({
                 <div className={s.titleContent}>
                   <h1 className={s.title}>{title}</h1>
                   <div className={s.info}>{info}</div>
-                  <Link className={s.btn} to="/login">{btn}</Link>
+                  <Link className={s.btn} to={link}>{btn}</Link>
                 </div>
               </div>
               <div className={s.imgBlock} style={{ backgroundImage: `url(${backgroundImage})` }}>
@@ -35,7 +35,7 @@ function Post({
                   <div className={s.info}>
                     {info}
                   </div>
-                  <Link className={s.btn} to="/login">{btn}</Link>
+                  <Link className={s.btn} to={link}>{btn}</Link>
                 </div>
               </div>
             </>

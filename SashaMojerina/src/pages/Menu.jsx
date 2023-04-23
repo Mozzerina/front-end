@@ -36,6 +36,7 @@ function Menu({
         setLoading(false);
       });
     setLoading(true);
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (
