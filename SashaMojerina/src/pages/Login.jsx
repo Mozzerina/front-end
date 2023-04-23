@@ -1,11 +1,8 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import s from './Login.module.css';
 import Form from '../components/Login/Form';
 
 function Login() {
-  const location = useLocation();
-  const { email } = location.state;
   return (
     <main className={s.main}>
       <div className={s.headerContainer}>

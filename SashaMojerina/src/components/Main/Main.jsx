@@ -18,6 +18,7 @@ function Main() {
         500 миль або обидва!*"
         position
         btn="Приєднатися"
+        link="/login/"
       />
       <Post
         image={image3}
@@ -27,6 +28,7 @@ function Main() {
         Dragon Drink® Mozzerina Refreshers®."
         color="#FF7D7D"
         btn="Замовити зараз"
+        link="/menu/drinks/hot-coffees"
       />
       <Post
         image={image4}
@@ -37,6 +39,8 @@ function Main() {
         color="#d85c12"
         btn="Замовити зараз"
         position
+        link="/menu/food/hot-breakfast"
+
       />
       <Post
         image={image2}
@@ -46,6 +50,7 @@ function Main() {
         з ванільним вівсяним молоком — 140 калорій або менше в гранде."
         color="#ffd080"
         btn="Замовити зараз"
+        link="/menu/food/hot-breakfast"
       />
       <div className={s.contentContainer}>
         <div className={s.contentBody}>
