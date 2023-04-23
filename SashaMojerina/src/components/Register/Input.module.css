@@ -1,0 +1,113 @@
+.errContainer {
+    padding-left: 1.6rem;
+    margin-top: 4px; 
+}
+
+.errBody {
+    height: auto;
+}
+
+.errBlock {
+    padding-top: 0.4rem;
+}
+
+.errFlex {
+    display: flex;
+    position: relative;
+    transition: color .2s ease-out;
+    font-size: 16px;
+}
+
+.errTextBlock {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+    color: #d62b1f;
+} 
+
+.errIcon {
+    color: #d62b1f;
+}
+
+/* custom input  */
+
+div.formItem{
+    position: relative;
+     display: block;
+    /* margin-bottom: 20px; */
+}
+
+.formStyle{
+  color:#8a8a8a;
+  display: block;
+  width: 90%;
+  height: 44px;
+  padding: 5px 5%;
+  border:1px solid #ccc;
+  border-radius: 8px;
+  background-clip: padding-box;
+  background-color: #fff;
+  font-family:'HelveticaNeue','Arial', sans-serif;
+  font-size: 105%;
+  letter-spacing: .8px;
+}
+
+.formStyleErr{
+    color:#8a8a8a;
+    display: block;
+    width: 90%;
+    height: 44px;
+    padding: 5px 5%;
+    border:1px solid #d62b1f;
+    border-radius: 8px;
+    background-clip: padding-box;
+    background-color: #fff;
+    font-family:'HelveticaNeue','Arial', sans-serif;
+    font-size: 105%;
+    letter-spacing: .8px;
+}
+
+.formStyleErr:focus {
+    outline: none;
+    border:1px solid #FF8934;
+    color:#FF8934;
+}
+
+.formItem .formStyle:focus{
+    outline: none;
+    border:1px solid #FF8934;
+    color:#FF8934;
+ }
+
+.formItem .formLabel {
+    position: absolute;
+    font-weight: 400;
+    font-size: 24px;
+    left:26px;
+    top:15px;
+    transition:all .4s ease;
+    color:#000;
+}
+
+.formLabelActive {
+    position: absolute;
+    left:26px;
+    top: -10px;
+    transition:all .4s ease;
+    color: #8a8a8a;
+    font-weight: 400;
+    font-size: 19px;
+    background-color: #fff;
+}
+
+.formContainer {
+    padding-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 0;
+}
+

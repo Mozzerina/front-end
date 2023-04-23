@@ -1,0 +1,411 @@
+.main {
+    margin-top: 124px;
+}
+
+.headerTitleContainer {
+    padding-left: 131px;
+    padding-right: 40px;
+    padding:  16px 40px 16px 131px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    /* box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.06), 0 0 2px rgba(0,0,0,.07); */
+    font-size: 14px;
+    color: rgba(0,0,0,.58);
+}
+
+.headerTitleLink {
+    color: inherit;
+}
+
+.headerContainerPhoto {
+    padding-left: 131px;
+    background-color: #C78456;
+    padding-right: 4rem;
+}
+
+.headerBody {
+    display: flex;
+    align-items: center;
+}
+
+.headerPhoto {
+    margin-left: 0;
+    margin-right: 88px;
+    max-width: 420px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-grow: 1;
+}
+
+.photoBody {
+    max-width: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.headerTextContainer {
+    margin-left: 88px;
+    margin-right: 0;
+    max-width: 420px;
+    padding-bottom: 0;
+    flex-grow: 1;
+}
+
+.headerText {
+    font-size: 36px;
+    padding: 0 0 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.headerTextFlex {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #fff;
+}
+
+.headerTextCount {
+    margin-left: 0;
+    font-size: 24px;
+}
+
+.headerTextCalories {
+    font-size: 24px;
+    padding-left: 4px;
+}
+
+.headerTextCalories {
+    position: relative;
+}
+
+.caloriesIconWrapper {
+    top: -33px;
+    left: -11px;
+    position: absolute;
+}
+
+.caloriesIconRelative {
+    position: relative;
+}
+
+.caloriesIconButton {
+    min-width: 44px;
+    min-height: 44px;
+    transition: all .2s ease-out;
+    background-color: none;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.caloriesIcon {
+    width: 16px;
+    height: 16px;
+    overflow: visible;
+    fill: currentcolor;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    vertical-align: middle;
+}
+
+.mainContainer {
+    padding: 32px 40px 0 131px;
+}
+
+.mainBody {
+    position: relative;
+}
+
+.mainFlexContainer {
+    display: flex;
+}
+
+.flexGrowColumnLeft {
+    margin-left: 0;
+    margin-right: 88px;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+.headingtext {
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+    font-size: 30px;
+}
+
+.headingBottomBorder {
+    padding: 0 8px 12px;
+    position: relative;
+    display: block;
+}
+
+.headingBottomBorder::after {
+    background: #C78456;
+    border-radius: 12px;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.gridBlock {
+    text-align: center;
+    margin: 0px 8px 32px 8px;
+}
+
+.gridItem {
+    margin: 8px 0;
+    height: 104px;
+    width: 72px;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+
+.activeCircle {
+    background: #ffdbbc;
+    border: 2px solid #C78456;
+    border-radius: 50%;
+    height: 56px;
+    opacity: 1;
+    position: absolute;
+    transition: all .25s ease-in-out;
+    width: 56px;
+    z-index: -1;
+}
+
+.radioButton {
+    height: 104px;
+    position: absolute;
+    width: 72px;
+    z-index: -1;
+    top: 0;
+    appearance: none;
+}
+
+
+
+.cursorPointer {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    transition: .25s ease-in-out;
+    transition-delay: .05s;
+    width: 24px;
+    cursor: pointer;
+    margin: 8px 24px;
+}
+
+
+.headingTextItem {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.textItem {
+    font-size: 20px;
+    text-align: center;
+}
+
+.editContainer {
+    position: relative;
+    z-index: 0;
+    padding-top: 12px;
+}
+  
+.editWrapper {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px ;
+    padding: 12px 16px;
+    position: relative;
+    transition: border .2s linear .2s;
+}
+  
+.editDropdown {
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    align-self: flex-end;
+    word-wrap: break-word;
+    line-height: 1.6;
+    padding: 0 8px 0 0;
+    border: none;
+    background: none;
+    appearance: none;
+    background-position: right center;
+    padding-right: 20px;
+    background-size: 16px 16px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+  
+.editButton {
+    font-size: 19px;
+    align-self: flex-end;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+}
+  
+.flexGrowColumnRight {
+    margin-left: 88px;
+    margin-right: 0;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+.storeToViewContainer {
+    padding-bottom: 32px;
+}
+
+
+.storeToViewFlexBox {
+    display: flex;
+    align-items: center;
+}
+
+.storeToViewSvg {
+    overflow: visible;
+    fill: currentcolor;
+    margin-right: 8px;
+    color: rgba(0,0,0,.58);
+}
+
+.storeToViewText {
+    color: rgba(0,0,0,.58);
+    font-size: 20px;
+}
+
+.footerBlockContainer {
+    margin-top: 64px;
+    padding: 32px 40px 32px 131px;
+    background-color: #C78456;
+}
+
+.footerBlockFlex {
+    display: flex;
+}
+
+.footerFlexGrowColumnLeft {
+    margin-left: 0;
+    margin-right: 88px;
+    flex-grow: 1;
+    max-width: 420px
+}
+
+.footerStarCost {
+    border: 1px solid #FFC700;
+    color:#FFC700;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.footerTextLineBreaks {
+    white-space: pre-line;
+    font-size: 14px;
+    color: hsla(0,0%,100%,.7);
+}
+
+.footerLink {
+    color: #fff;
+    margin-top: 24px;
+    padding: 7px 16px;
+    background: none;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.footerCalories {
+    padding-top: 16px;
+    color: #fff;
+}
+
+.footerFlexGrowColumnRight {
+    margin-left: 88px;
+    margin-right: 0;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+.nutrionMainContainer {
+    padding: 32px 40px 0px 131px;
+}
+.nutrionMainBody {
+    position: relative;
+}
+
+.nutrionMainButton {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+.nutrionMainSvg {
+    width: 24px;
+    height: 24px;
+    overflow: visible;
+    fill: currentcolor;
+    padding-right: 4px;
+}
+
+.nutrionFlexGrowColumnLeft {
+    margin-left: 0;
+    margin-right: 88px;
+    max-width: 420px;
+    flex-grow: 1;
+    order: 1;
+}
+
+.nutrionFlexGrowColumnRight {
+    margin-left: 0;
+    margin-left: 88px;
+    max-width: 420px;
+    flex-grow: 1;
+    order: 1;
+}
+
+.nutrionMainFlex {
+    display: flex;
+}

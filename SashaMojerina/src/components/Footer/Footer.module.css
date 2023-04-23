@@ -1,0 +1,126 @@
+.footer {
+    width: 100%;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.1), 0 -2px 2px rgba(0,0,0,.06), 0 0 2px rgba(0,0,0,.07);
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+.footerBody {
+    padding-left: 276px;
+    padding-right: 40px;
+}
+
+.footerHeader {
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px 190px;
+    column-gap: 20px;
+}
+
+.footerIconBody {
+    display: flex;
+    margin-left: -5px;
+}
+
+.footerFooter {
+    margin-bottom: 0.4rem;
+    margin-top: 1.6rem;
+    display: flex;
+}
+
+.footerFooterItem {
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.menuFooterColumn {
+
+}
+
+.menuFooterTitle {
+    font-size: 20px;
+    margin-bottom: 2.4rem;
+    font-weight: 400;
+}
+
+.menuFooterLink {
+    text-decoration: none;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    display: block;
+    color: rgba(0,0,0,.58);
+}
+
+.menuFooterLink:hover {
+    color: #000000;
+    transition: 0.3s;
+}
+
+.line {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    border: 0;
+    margin: 0;
+}
+
+.line::before {
+    content: "";
+    display: block;
+    border-top: 2px solid rgba(0,0,0,.1);
+}
+
+.footerIconItem {
+    margin-right: 0.4rem;
+}
+
+.footerIconLink {
+    min-width: 44px;
+    min-height: 44px;
+    position: relative;
+    transition: all .2s ease-out;
+    display: inline-block;
+    color: currentColor;
+    border-radius: 50%;
+}
+
+.footerIcon {
+    width: 32px;
+    height: 32px;
+    overflow: visible;
+    fill: currentColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    vertical-align: middle!important;
+}
+
+.footerIcon:hover {
+    opacity: 0.6;
+}
+
+
+.text {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    color: rgba(0,0,0,.58);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 125%;
+}
+
+.footerFooterLink {
+    padding-right: 1.6rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: currentColor;
+    transition: 0.3s;
+}
+
+.footerFooterLink:hover {
+    opacity: 0.6;
+}
+
